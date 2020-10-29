@@ -23,7 +23,7 @@
                     </div>
                 </v-row>
                 <div class="menu-right">
-                    <v-card class="arena-card">
+                    <v-card class="arena-card elevation-0">
                         <v-img src="../assets/img/cards.png" class="white--text align-end">
                             <v-card-title class="beleren">Cartas y mazos</v-card-title>
                             <v-card-subtitle class="white--text">Conoce todas las cartas y mazos del canal</v-card-subtitle>
@@ -31,7 +31,7 @@
                     </v-card>
                 </div>
                 <div class="menu-right">
-                    <v-card class="arena-card">
+                    <v-card class="arena-card elevation-0">
                         <v-img src="../assets/img/terms.png" class="white--text align-end">
                             <v-card-title class="beleren">Términos comunes</v-card-title>
                             <v-card-subtitle class="white--text">Aprende sobre los términos más usados al jugar</v-card-subtitle>
