@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "BelerenSmallBold";
+    src: url("../assets/fonts/BelerenSmallCapsBold.woff") format("woff");
+}
+
+.beleren {
+    font-family: "BelerenSmallBold";
+    font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e0bc2a;
+}
+
+@import "./main.scss";
+@import "./home.scss";

@@ -1,0 +1,97 @@
+.arena-menu {
+    height: 76vh;
+    .menu-item {
+        cursor: pointer;
+        height: 76vh;
+
+        &.right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .menu-left {
+            height: inherit;
+            padding: 16px 8px 16px 16px;
+        }
+
+        .menu-right {
+            height: 36vh;
+            padding: 8px 16px 8px 16px;
+            &:first-child {
+                padding-top: 16px;
+            }
+            &:last-child {
+                padding-bottom: 16px;
+            }
+        }
+
+        .arena-top-bar {
+            padding-right: 32px;
+
+            h2 {
+                font-family: "BelerenSmallBold";
+                color: #fff;
+                padding-right: 16px;
+            }
+
+            .img-container {
+                width: 50px;
+            }
+        }
+
+        .arena-card {
+            height: 100%;
+            background-color: transparent !important;
+
+            .v-image {
+                height: inherit;
+
+                .v-responsive__content {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+
+                .v-image__image {
+                    transition: all ease 0.2s !important;
+                }
+            }
+            &:hover {
+                .v-image {
+                    .v-image__image {
+                        background-position-x: right !important;
+                    }
+                }
+
+                -webkit-filter: drop-shadow(1px 1px 0 #fff)
+                    drop-shadow(-1px -1px 0 #fff);
+                filter: drop-shadow(1px 1px 0 #fff)
+                    drop-shadow(-1px -1px 0 #fff);
+            }
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .arena-menu {
+        height: 95vh;
+        .menu-item {
+            height: 35vh;
+
+            &.right {
+                height: 60vh;
+            }
+
+            .menu-left {
+                height: 30vh;
+            }
+
+            .menu-right {
+                height: 30vh;
+            }
+
+            .arena-card {
+                pointer-events: none;
+            }
+        }
+    }
+}
