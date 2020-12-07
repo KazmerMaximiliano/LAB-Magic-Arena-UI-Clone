@@ -71,22 +71,51 @@
     }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 960px) {
     .arena-menu {
-        height: 95vh;
+        height: 90vh;
         .menu-item {
-            height: 35vh;
+            height: 42vh;
 
             &.right {
-                height: 60vh;
-            }
-
-            .menu-left {
-                height: 30vh;
+                display: flex;
+                flex-direction: row;
             }
 
             .menu-right {
-                height: 30vh;
+                width: 50%;
+                padding: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .arena-menu {
+        height: 90vh;
+        .menu-item {
+            height: 26vh;
+
+            &.right {
+                height: 52vh;
+                display: inline;
+            }
+
+            .arena-top-bar {
+                padding-right: 0px;
+                margin-right: 16px;
+                height: 8vh;
+            }
+
+            .menu-left {
+                height: 26vh;
+                padding: 16px;
+            }
+
+            .menu-right {
+                width: 100%;
+                height: 26vh;
+                padding: 16px;
             }
 
             .arena-card {

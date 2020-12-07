@@ -1,0 +1,27 @@
+.appbar {
+    font-family: "BelerenSmallBold";
+    .logo-container {
+        .v-image {
+            width: 36px;
+            margin: 0px 16px;
+        }
+        cursor: pointer;
+    }
+
+    .logo-text {
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+.drawer-title {
+    .drawer-logo {
+        .v-image {
+            width: 36px;
+        }
+    }
+    .drawer-text {
+        color: white;
+        font-size: 24px;
+    }
+}
