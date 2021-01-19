@@ -6,6 +6,11 @@ import es from 'vuetify/es5/locale/es';
 Vue.use(Vuetify);
 
 export default new Vuetify({
+  breakpoint: {
+    thresholds: {
+      uxs: 400
+    },
+  },
   theme: {
       options: {
         customProperties: true,

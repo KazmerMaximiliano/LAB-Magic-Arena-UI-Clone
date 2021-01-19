@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Ematicones from './views/Ematicones.vue'
 import NotFound from './views/NotFound.vue'
 
 const originalPush = Router.prototype.push;
@@ -25,5 +26,10 @@ export default new Router({
       name: 'home',
       component: Home
     },
+    {
+      path: '/ematicones',
+      name: 'ematicones',
+      component: Ematicones
+    }
   ]
 })

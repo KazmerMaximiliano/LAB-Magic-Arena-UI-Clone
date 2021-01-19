@@ -1,12 +1,10 @@
 .arena-background {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #000;
     background-image: url("../assets/img/background.png");
     background-size: cover;
-    .arena-main {
-        height: 100vh;
-        display: flex;
-        align-items: center;
+    .arena-background-transparency {
+        min-height: 100vh;
         background-color: rgba(0, 0, 0, 0.8);
     }
 }

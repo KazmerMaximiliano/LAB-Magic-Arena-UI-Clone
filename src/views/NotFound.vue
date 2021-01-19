@@ -1,6 +1,6 @@
 <template>
   <div>
-      <v-row justify="center">
+      <v-row justify="center" class="my-12">
           <v-col cols="auto">
               <v-img src="../assets/img/felipe.png" width="500"></v-img>
               <h1 class="notFoundTitle">¿Dónde estoy?</h1>

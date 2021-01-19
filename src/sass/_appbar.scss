@@ -1,0 +1,114 @@
+.appbar {
+    .v-toolbar__content {
+        padding: 0px;
+    }
+
+    .left-items {
+        margin-top: 8px;
+        width: 196px;
+        height: 62px;
+        background-color: #1f201f;
+        border-style: solid;
+        border-color: rgba(78, 79, 82, 0.5);
+        border-width: 0px 2px 2px 0px;
+        border-radius: 0px 0px 9px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .logo-item {
+            width: 36px;
+        }
+        .name-item {
+            font-family: "BelerenSmallBold";
+            font-size: 20px;
+            margin: 0px 12px;
+            color: #818081;
+        }
+    }
+
+    .main-items {
+        .v-btn {
+            box-shadow: none !important;
+            background-color: transparent !important;
+            border-radius: 0px;
+            height: 48px;
+            font-family: "BelerenSmallBold";
+            text-transform: capitalize;
+            font-size: 16px;
+            color: #818081;
+            &.main-active {
+                height: 52px;
+                border-bottom: 2px solid #e0bc2a;
+                color: #fff;
+            }
+        }
+    }
+
+    .right-items {
+        margin-top: 8px;
+        width: 196px;
+        height: 56px;
+        padding-left: 8px;
+        background-color: #1f201f;
+        border-style: solid;
+        border-color: rgba(78, 79, 82, 0.5);
+        border-width: 0px 0px 2px 2px;
+        border-radius: 0px 0px 0px 9px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .v-btn {
+            .v-icon {
+                color: #818081;
+            }
+            &:hover {
+                .v-icon {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 762px) {
+    .appbar {
+        .left-items {
+            width: 118px;
+            .name-item {
+                display: none;
+            }
+        }
+        .right-items {
+            width: 118px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .appbar {
+        .left-items {
+            width: 68px;
+            .name-item {
+                display: none;
+            }
+        }
+    }
+}
+
+.app-drawer {
+    font-family: "BelerenSmallBold";
+    .drawer-title {
+        .drawer-logo {
+            .v-image {
+                width: 36px;
+            }
+        }
+        .drawer-text {
+            color: white;
+            font-size: 24px;
+        }
+    }
+}
